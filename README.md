@@ -5,6 +5,8 @@ Official PyTorch implementation of the WACV 2023 paper "Intra-Source Style Augme
 
 [![arXiv](https://img.shields.io/badge/arXiv-2110.02711-red)](https://arxiv.org/pdf/2210.10175.pdf)
 
+![overview](figs/overview.png)
+![teaser](figs/teaser.png)
 
 ## Getting Started
 The code is tested for Python 3.9.
