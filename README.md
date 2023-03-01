@@ -13,7 +13,7 @@ The code is tested for Python 3.9.
 ISSA conda environment can be created via
 ```
 conda env create --file environment.yml
-source activate oasis
+source activate issa
 ```
 **Note:** please read [how-to.pdf](how-to.pdf) for more detailed instruction. 
 
