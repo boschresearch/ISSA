@@ -1,12 +1,16 @@
 
 # Intra-Source Style Augmentation for Improved Domain Generalization (ISSA)
-Official PyTorch implementation of the WACV 2023 paper "Intra-Source Style Augmentation for Improved Domain Generalization".  This repository provides the minimal code snippets of the masked noise encoder for GAN inversion. 
+Official PyTorch implementation of the WACV 2023 paper ["Intra-Source Style Augmentation for Improved Domain Generalization"](https://arxiv.org/pdf/2210.10175.pdf).  This repository provides the minimal code snippets of the masked noise encoder for GAN inversion. 
+
+**:fire: Updates** We extended our WACV paper and add more applications, e.g., utilzing stylized data for assessing domain generalization performance. Please check our new extension ["Intra- & Extra-Source Exemplar-Based Style Synthesis for Improved Domain Generalization"](https://arxiv.org/pdf/2307.00648.pdf)!
+
+[![arXiv](https://img.shields.io/badge/arXiv-2210.10175-red)](https://arxiv.org/pdf/2210.10175.pdf)  [![arXiv](https://img.shields.io/badge/arXiv-2307.00648-blue)](https://arxiv.org/pdf/2307.00648.pdf)    
 
 
-[![arXiv](https://img.shields.io/badge/arXiv-2110.02711-red)](https://arxiv.org/pdf/2210.10175.pdf)
+![overview](figs/overview.png)   
+![teaser](figs/teaser.png)   
+![extra-style](figs/extra.png)   
 
-![overview](figs/overview.png)
-![teaser](figs/teaser.png)
 
 ## Getting Started
 The code is tested for Python 3.9.
