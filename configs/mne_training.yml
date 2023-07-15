@@ -11,9 +11,9 @@ encoder_training:
   cond: false
   cooldown_w: true
   cropping_dataset: center
-  data: /home/lyu7rng/datasets/gan_encoder_training/cityscapes
-  data_fake: /home/lyu7rng/code_repo/4_3_masked_noise_encoder_merged_all_res/others/fake_cityscapes_random_50k_res512
-  dataset_name: mix_bdd100k
+  data: /home/datasets/gan_encoder_training/cityscapes # path to real data
+  data_fake: /home/code_repo/fake_cityscapes_random_50k_res512 # path to GAN generated fake data
+  dataset_name: mix_bdd100k # self-defined dataset name
   dlr: 1.0e-05
   dry_run: false
   ema_enable: true
@@ -56,8 +56,8 @@ encoder_training:
   noise_predict_until: 128
   num_masked_layer: 2
   optimizer: ranger
-  outdir: /home/lyu7rng/code_repo/6_masked_noise_encoder_open/training_outputs_temp
-  pkl_dir: /fs/scratch/rng_cr_bcai_dl/lyu7rng/pretrained/pretrained_model_stylegan/stylegan2-random-cityscapes-train-z512-res512.pkl
+  outdir: /home/code_repo/training_outputs_temp # output dir
+  pkl_dir: /home/code_repo/pretrained/pretrained_model_stylegan/stylegan2-random-cityscapes-train-z512-res512.pkl # path to pretrained GAN model
   reconstruction_loss: L2
   resolution: 512
   resume: null

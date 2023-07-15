@@ -1,4 +1,5 @@
 
+
 # Intra-Source Style Augmentation for Improved Domain Generalization (ISSA)
 Official PyTorch implementation of the WACV 2023 paper ["Intra-Source Style Augmentation for Improved Domain Generalization"](https://arxiv.org/pdf/2210.10175.pdf).  This repository provides the minimal code snippets of the masked noise encoder for GAN inversion. 
 
@@ -19,7 +20,21 @@ ISSA conda environment can be created via
 conda env create --file environment.yml
 source activate issa
 ```
+
+## Training
 **Note:** please read [how-to.pdf](how-to.pdf) for more detailed instruction. 
+After proper path configuration in [configs/mne_training.yml](configs/mne_training.yml), run the command below for training the encoder
+```
+python train_encoder.py
+```
+Some important paths need to be adjusted in the configuration file:
+- `data`: path to the real data
+- `data_fake`: path to the GAN generated data, where the corresponding w latents are stored in the same path
+- `pkl_dir`: path to the pretrained GAN model
+
+## Inference
+For inference, please refer to the code snippets [here](https://github.com/SnowdenLee/ISSA/blob/a6d191f12f31c92608dd6e50f09d11113a8722b4/train_encoder.py#L428-L438), which shows how the Encoder & Generator are used for image generation.
+
 
 ## Citation
 If you use this code please cite
@@ -30,6 +45,13 @@ If you use this code please cite
   author={Li, Yumeng and Zhang, Dan and Keuper, Margret and Khoreva, Anna},
   booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
   pages={509--519},
+  year={2023}
+}
+
+@article{li2023intra_and_extra,
+  title={Intra-\& Extra-Source Exemplar-Based Style Synthesis for Improved Domain Generalization},
+  author={Li, Yumeng and Zhang, Dan and Keuper, Margret and Khoreva, Anna},
+  journal={arXiv preprint arXiv:2307.00648},
   year={2023}
 }
 ```
