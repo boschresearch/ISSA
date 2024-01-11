@@ -47,14 +47,15 @@ If you use this code please cite
   year={2023}
 }
 
-@article{li2023intra_and_extra,
-  title={Intra-\& Extra-Source Exemplar-Based Style Synthesis for Improved Domain Generalization},
+@article{li2023extra,
+  title={Intra-\& extra-source exemplar-based style synthesis for improved domain generalization},
   author={Li, Yumeng and Zhang, Dan and Keuper, Margret and Khoreva, Anna},
-  journal={arXiv preprint arXiv:2307.00648},
-  year={2023}
+  journal={International Journal of Computer Vision},
+  pages={1--20},
+  year={2023},
+  publisher={Springer}
 }
 ```
-
 
 
 ## License
